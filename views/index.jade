@@ -1,0 +1,9 @@
+extends layout
+
+block content
+  .wrapper
+    img.logo(src='/images/Logo_Pllub.png')
+    #lightgallery.masonry
+        each foto, i in fotos
+            .item(data-src='/upload/#{foto}')
+                img(src='/upload/#{foto}')
